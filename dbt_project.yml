@@ -1,0 +1,11 @@
+name: 'project_dbtcore'
+version: '1.0.0'
+config-version: 2
+
+profile: 'dbtcore_pg'
+
+model-paths: ["models"]
+
+models:
+  project_dbtcore:
+    +materialized: view
