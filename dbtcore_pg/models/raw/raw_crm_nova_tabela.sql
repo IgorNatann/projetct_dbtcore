@@ -1,0 +1,1 @@
+SELECT * FROM public.new_table_teste
