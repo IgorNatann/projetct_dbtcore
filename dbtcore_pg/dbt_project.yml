@@ -8,4 +8,5 @@ model-paths: ["models"]
 
 models:
   project_dbtcore:
-    +materialized: view
+    raw:
+      +materialized: view
