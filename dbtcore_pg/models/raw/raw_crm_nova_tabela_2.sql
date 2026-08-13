@@ -1,1 +1,0 @@
-SELECT * FROM raw_crm_new_table_2
