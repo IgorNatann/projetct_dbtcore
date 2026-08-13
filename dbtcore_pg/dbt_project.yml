@@ -7,5 +7,5 @@ profile: 'dbtcore_pg'
 model-paths: ["models"]
 
 models:
-  project_dbtcore:
+  raw:
     +materialized: view
