@@ -7,5 +7,13 @@ profile: 'dbtcore_pg'
 model-paths: ["models"]
 
 models:
-  raw:
-    +materialized: view
+  project_dbtcore:
+    raw:
+      +materialized: view
+    staging:
+      +materialized: view
+    intermediate:
+      +materialized: view
+    marts:
+      +schema: 'gold'
+      +materialized: table
