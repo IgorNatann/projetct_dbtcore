@@ -1,0 +1,47 @@
+version: 2
+
+models:
+  - name: stg_customers
+    columns:
+      - name: cliente_id
+        data_type: varchar(5)
+        description: 'Customer ID'
+        data_tests:
+          - not_null
+          - unique
+      - name: nome_empresa
+        data_type: varchar(40)
+        description: 'Company name'
+        data_tests:
+          - not_null
+      - name: contato
+        data_type: varchar(30)
+        description: 'Contact name'
+        data_tests:
+          - not_null
+  - name: stg_orders
+    columns:
+      - name: id_ordem
+        data_type: smallint
+        description: 'Order ID'
+        data_tests:
+          - not_null
+      - name: id_cliente
+        data_type: varchar(5)
+        description: 'Customer ID'
+        data_tests:
+          - not_null
+      - name: id_funcionario
+        data_type: smallint
+        description: 'Employee ID'
+        data_tests:
+          - not_null
+      - name: data_ordem  
+        data_type: date
+        description: 'Order date'
+        data_tests:
+          - not_null
+
+
+
+

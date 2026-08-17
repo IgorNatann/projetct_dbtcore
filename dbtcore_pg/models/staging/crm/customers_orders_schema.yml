@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: postgre_dbt
+    database: postgre_dbt
+    schema: public
+    tables:
+      - name: customers
+      - name: orders
