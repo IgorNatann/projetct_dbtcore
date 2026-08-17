@@ -8,12 +8,5 @@ model-paths: ["models"]
 
 models:
   project_dbtcore:
-    raw:
-      +materialized: view
     staging:
       +materialized: view
-    intermediate:
-      +materialized: view
-    marts:
-      +schema: 'gold'
-      +materialized: table
